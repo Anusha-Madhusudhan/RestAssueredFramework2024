@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-24T20:24:00 EST" name="Default suite" finished-at="2024-02-24T20:24:02 EST" duration-ms="2586">
+    <groups>
+    </groups>
+    <test started-at="2024-02-24T20:24:00 EST" name="Default test" finished-at="2024-02-24T20:24:02 EST" duration-ms="2586">
+      <class name="mockServer.MockServerImpln">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:mockServer.MockServerImpln@3eb738bb]" started-at="2024-02-24T20:24:00 EST" name="setUp" finished-at="2024-02-24T20:24:01 EST" duration-ms="858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test2()[pri:0, instance:mockServer.MockServerImpln@3eb738bb]" started-at="2024-02-24T20:24:01 EST" name="test2" finished-at="2024-02-24T20:24:02 EST" duration-ms="1530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mockServer.MockServerImpln@3eb738bb]" started-at="2024-02-24T20:24:02 EST" name="tearDown" finished-at="2024-02-24T20:24:02 EST" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mockServer.MockServerImpln -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
