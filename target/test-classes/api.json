@@ -1,0 +1,7 @@
+{
+ "gitAPI":"https://api.github.com",
+ "products":"https://fakestoreapi.com/products",
+  "cart":"https://fakestoreapi.com/carts",
+   "user":"https://fakestoreapi.com/users",
+   "login":"https://fakestoreapi.com/auth/login"
+}
