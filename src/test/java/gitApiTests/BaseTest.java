@@ -14,6 +14,7 @@ import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
+import reports.ExtentReportListeners;
 import utility.JsonUtility;
 
 /**
@@ -28,15 +29,24 @@ public class BaseTest {
 	@BeforeSuite
 	public void setUp() throws IOException {
 		
+		
+		
+		
+		
 		Map<String, String> apiMap=JsonUtility.getJsondataAsMap(FileConstatnt.apiFile);
-		String api=System.getProperty("api");
+		String api=System.getProperty("api"); // mvn test -Dapi=gitAPI  passing value form command line
 		System.out.println("*****************"+System.getProperty("api"));
 		switch (api) {
 		case "gitAPI":
 			RestAssured.baseURI=apiMap.get("gitAPI");
+			reqSpe=new RequestSpecBuilder().setBaseUri(RestAssured.baseURI)
+                    .addHeader("token", bearerToken)
+                    .addHeader("Content-Type", "application/json").build();
 			break;
 		case "products":
 			RestAssured.baseURI=apiMap.get("products");
+			reqSpe=new RequestSpecBuilder().setBaseUri(RestAssured.baseURI)
+                    .addHeader("Content-Type", "application/json").build();
 			break;
 		case "cart":
 			RestAssured.baseURI=apiMap.get("cart");
@@ -52,8 +62,7 @@ public class BaseTest {
 			break;
 		}
 		
-		reqSpe=new RequestSpecBuilder().addHeader("token", bearerToken)
-				                    .addHeader("Content-Type", "application/json").build();
+		
 		
 	}
 

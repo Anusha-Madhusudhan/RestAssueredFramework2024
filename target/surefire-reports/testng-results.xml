@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-11T22:35:04 EDT" name="Suite" finished-at="2024-03-11T22:35:05 EDT" duration-ms="1181">
+  <suite started-at="2024-03-13T12:22:16 EDT" name="ProductsSuite" finished-at="2024-03-13T12:22:18 EDT" duration-ms="1724">
     <groups>
     </groups>
-    <test started-at="2024-03-11T22:35:04 EDT" name="Test" finished-at="2024-03-11T22:35:05 EDT" duration-ms="1181">
-      <class name="gitApiTests.getAllRepoTest01">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:gitApiTests.getAllRepoTest01@459e9125]" started-at="2024-03-11T22:35:03 EDT" name="setUp" finished-at="2024-03-11T22:35:04 EDT" duration-ms="627" status="PASS">
+    <test started-at="2024-03-13T12:22:16 EDT" name="Test" finished-at="2024-03-13T12:22:18 EDT" duration-ms="1724">
+      <class name="gitApiTests.getProductDetailsTest02">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:gitApiTests.getProductDetailsTest02@6302bbb1]" started-at="2024-03-13T12:22:15 EDT" name="setUp" finished-at="2024-03-13T12:22:16 EDT" duration-ms="941" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateGetAllRepoFromGit()[pri:0, instance:gitApiTests.getAllRepoTest01@459e9125]" started-at="2024-03-11T22:35:04 EDT" name="validateGetAllRepoFromGit" finished-at="2024-03-11T22:35:05 EDT" duration-ms="1148" status="PASS">
+        <test-method signature="validateGetProductDetails()[pri:0, instance:gitApiTests.getProductDetailsTest02@6302bbb1]" started-at="2024-03-13T12:22:16 EDT" name="validateGetProductDetails" finished-at="2024-03-13T12:22:18 EDT" duration-ms="1529" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateGetAllRepoFromGit -->
-      </class> <!-- gitApiTests.getAllRepoTest01 -->
+        </test-method> <!-- validateGetProductDetails -->
+      </class> <!-- gitApiTests.getProductDetailsTest02 -->
     </test> <!-- Test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- ProductsSuite -->
 </testng-results>
