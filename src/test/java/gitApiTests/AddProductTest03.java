@@ -21,7 +21,7 @@ import utility.DataProviderClass;
 public class AddProductTest03 extends BaseTest{
 	
 	@Test(dataProvider = "ProductTestData",dataProviderClass =DataProviderClass.class )
-	public void validateAddProduct(Map<String, Object> productMapData) {
+	 void validateAddProduct(Map<String, Object> productMapData) {
 		
 		Response res=ReusableRequestMethods.postRequest(productMapData, "", reqSpe);
 		
@@ -30,7 +30,7 @@ public class AddProductTest03 extends BaseTest{
 	
 	
 	@Test(dataProvider = "ProductTestDataFromPoiji",dataProviderClass =DataProviderClass.class )
-	public void validateAddProduct2(ProductPOJO productMapData) {
+	 void validateAddProduct2(ProductPOJO productMapData) {
 		
 		System.out.println(Thread.currentThread().getId());
 		

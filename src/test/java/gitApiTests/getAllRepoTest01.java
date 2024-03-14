@@ -36,7 +36,7 @@ public class GetAllRepoTest01 extends BaseTest {
 	
 
 //	@Test
-	public void validateGetAllRepo() throws JsonMappingException, JsonProcessingException {
+	 void validateGetAllRepo() throws JsonMappingException, JsonProcessingException {
 		
 		
 		
@@ -96,7 +96,7 @@ public class GetAllRepoTest01 extends BaseTest {
 	
 	
 	@Test
-	public void validateGetAllRepoFromGit() {
+	 void validateGetAllRepoFromGit() {
 		
 		Response res=ReusableRequestMethods.getRequest("/users/Anusha-Madhusudhan/repos", reqSpe);
 		

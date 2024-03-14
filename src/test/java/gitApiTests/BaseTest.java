@@ -27,7 +27,7 @@ public class BaseTest {
 	
 	
 	@BeforeSuite
-	public void setUp() throws IOException {
+	 void setUp() throws IOException {
 		
 		
 		
