@@ -19,7 +19,7 @@ public class GetProductDetailsTest02 extends BaseTest{
 		
 		System.out.println(Thread.currentThread().getId());
 		
-		Response res=ReusableRequestMethods.getRequest("/21", reqSpe);
+		Response res=ReusableRequestMethods.getRequest("/1", reqSpe);
 		
 		assertThat(res.statusCode(), equalTo(200));
 		
