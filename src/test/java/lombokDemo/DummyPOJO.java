@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pojos;
+package lombokDemo;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="ProductsSuite">
+<suite name="ProductsSuite" data-provider-thread-count="4" parallel="classes">
 	<listeners>
 		<listener class-name="reports.ExtentReportListeners"></listener>
 	</listeners>
   <test thread-count="5" name="Test">
 	  <classes>
-		  <class name="gitApiTests.getProductDetailsTest02">
+		  <class name="gitApiTests.GetProductDetailsTest02">
 			  <methods>
 				  <include name="validateGetProductDetails"></include>
+			  </methods>
+		  </class>
+		  <class name="gitApiTests.AddProductTest03">
+			  <methods>
+				  <exclude name="validateAddProduct"></exclude>
+				  <include name="validateAddProduct2"></include>
 			  </methods>
 		  </class>
 	  </classes>

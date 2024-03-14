@@ -31,7 +31,7 @@ import static org.hamcrest.Matchers.*;
 /**
  * 
  */
-public class getAllRepoTest01 extends BaseTest {
+public class GetAllRepoTest01 extends BaseTest {
 	
 	
 

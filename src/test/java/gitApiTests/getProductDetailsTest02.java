@@ -12,12 +12,14 @@ import static org.hamcrest.Matchers.*;
 /**
  * 
  */
-public class getProductDetailsTest02 extends BaseTest{
+public class GetProductDetailsTest02 extends BaseTest{
 	
 	@Test
 	void validateGetProductDetails() {
 		
-		Response res=ReusableRequestMethods.getRequest("/1", reqSpe);
+		System.out.println(Thread.currentThread().getId());
+		
+		Response res=ReusableRequestMethods.getRequest("/21", reqSpe);
 		
 		assertThat(res.statusCode(), equalTo(200));
 		
