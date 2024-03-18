@@ -1,0 +1,89 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1710538049.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"id",
+		"userId",
+		"date",
+		"products",
+		"__v"
+	],
+	"properties": {
+		"id": {
+			"$id": "#root/id", 
+			"title": "Id", 
+			"type": "integer",
+			"examples": [
+				1
+			],
+			"default": 0
+		},
+		"userId": {
+			"$id": "#root/userId", 
+			"title": "Userid", 
+			"type": "integer",
+			"examples": [
+				1
+			],
+			"default": 0
+		},
+		"date": {
+			"$id": "#root/date", 
+			"title": "Date", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"2020-03-02T00:00:00.000Z"
+			],
+			"pattern": "^.*$"
+		},
+		"products": {
+			"$id": "#root/products", 
+			"title": "Products", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/products/items", 
+				"title": "Items", 
+				"type": "object",
+				"required": [
+					"productId",
+					"quantity"
+				],
+				"properties": {
+					"productId": {
+						"$id": "#root/products/items/productId", 
+						"title": "Productid", 
+						"type": "integer",
+						"examples": [
+							1
+						],
+						"default": 0
+					},
+					"quantity": {
+						"$id": "#root/products/items/quantity", 
+						"title": "Quantity", 
+						"type": "integer",
+						"examples": [
+							4
+						],
+						"default": 0
+					}
+				}
+			}
+
+		},
+		"__v": {
+			"$id": "#root/__v", 
+			"title": "__v", 
+			"type": "integer",
+			"examples": [
+				0
+			],
+			"default": 0
+		}
+	}
+}

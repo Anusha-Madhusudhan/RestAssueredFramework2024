@@ -21,7 +21,7 @@ import pojos.ProductPOJO;
 public class DataProviderClass {
 	
 	
-	@DataProvider(name = "ProductTestData")
+	@DataProvider(name = "ProductTestData",parallel = true)
 	public Iterator<Map<String, Object>> readdata(){
 		
 		
@@ -34,7 +34,7 @@ public class DataProviderClass {
 	}
 	
 	
-	@DataProvider(name = "ProductTestDataFromPoiji",parallel = true)
+	@DataProvider(name = "ProductTestDataFromPoiji")
 	public Iterator<ProductPOJO> readProductdata(){
 		
 		List<ProductPOJO> productList=Poiji.fromExcel(new File(FileConstatnt.productTestDataPath), ProductPOJO.class);

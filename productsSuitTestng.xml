@@ -13,10 +13,16 @@
 		  </class>
 		  <class name="gitApiTests.AddProductTest03">
 			  <methods>
-				  <exclude name="validateAddProduct"></exclude>
-				  <include name="validateAddProduct2"></include>
+				  <include name="validateAddProduct"></include>
+				  <exclude name="validateAddProduct2"></exclude>
 			  </methods>
 		  </class>
+		  <class name="gitApiTests.Get5ProductsTest04"></class>
+		  <class name="gitApiTests.GetSortedProdectListTC05"></class>
+		  <class name="gitApiTests.GetAllCategoryTC06"></class>
+		  <class name="gitApiTests.GetInCategoryTC07"></class>
+		  <class name="gitApiTests.UpdateProductTC08"></class>
+		  <class name="gitApiTests.DeleteProductTC09"></class>
 	  </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -22,7 +22,7 @@ public class AddProductTest03 extends BaseTest{
 	
 	@Test(dataProvider = "ProductTestData",dataProviderClass =DataProviderClass.class )
 	 void validateAddProduct(Map<String, Object> productMapData) {
-		
+		System.out.println(Thread.currentThread().getId());
 		Response res=ReusableRequestMethods.postRequest(productMapData, "", reqSpe);
 		
 		System.out.println(res.body().asPrettyString());

@@ -1,67 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="7" passed="5" failed="0" skipped="0">
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-14T14:28:37 EDT" name="ProductsSuite" finished-at="2024-03-14T14:28:39 EDT" duration-ms="1653">
+  <suite started-at="2024-03-18T09:58:55 EDT" name="CartSuite" finished-at="2024-03-18T09:58:59 EDT" duration-ms="3870">
     <groups>
     </groups>
-    <test started-at="2024-03-14T14:28:37 EDT" name="Test" finished-at="2024-03-14T14:28:39 EDT" duration-ms="1653">
-      <class name="gitApiTests.GetProductDetailsTest02">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:gitApiTests.GetProductDetailsTest02@73a1e9a9]" started-at="2024-03-14T14:28:36 EDT" name="setUp" finished-at="2024-03-14T14:28:37 EDT" duration-ms="629" status="PASS">
+    <test started-at="2024-03-18T09:58:55 EDT" name="Test" finished-at="2024-03-18T09:58:59 EDT" duration-ms="3870">
+      <class name="gitApiTests.GetAllCartTC10">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:gitApiTests.GetAllCartTC10@33d512c1]" started-at="2024-03-18T09:58:54 EDT" name="setUp" finished-at="2024-03-18T09:58:55 EDT" duration-ms="1027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateGetProductDetails()[pri:0, instance:gitApiTests.GetProductDetailsTest02@73a1e9a9]" started-at="2024-03-14T14:28:37 EDT" name="validateGetProductDetails" finished-at="2024-03-14T14:28:39 EDT" duration-ms="1507" status="PASS">
+        <test-method signature="vaidateGetAllCart()[pri:0, instance:gitApiTests.GetAllCartTC10@33d512c1]" started-at="2024-03-18T09:58:55 EDT" name="vaidateGetAllCart" finished-at="2024-03-18T09:58:58 EDT" duration-ms="2797" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateGetProductDetails -->
-      </class> <!-- gitApiTests.GetProductDetailsTest02 -->
-      <class name="gitApiTests.AddProductTest03">
-        <test-method signature="validateAddProduct2(pojos.ProductPOJO)[pri:0, instance:gitApiTests.AddProductTest03@78691363]" started-at="2024-03-14T14:28:38 EDT" name="validateAddProduct2" data-provider="ProductTestDataFromPoiji" finished-at="2024-03-14T14:28:39 EDT" duration-ms="921" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ProductPOJO(titleStr=Test Product, title=Test ProductEQh, price=13, description=Aadderr, image=https://i.pravatar.cc, category=electronic, extraCellInExcelSheet=null)]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- vaidateGetAllCart -->
+      </class> <!-- gitApiTests.GetAllCartTC10 -->
+      <class name="gitApiTests.GetSingleCartTC11">
+        <test-method signature="validateGetSingleCart()[pri:0, instance:gitApiTests.GetSingleCartTC11@30c15d8b]" started-at="2024-03-18T09:58:58 EDT" name="validateGetSingleCart" finished-at="2024-03-18T09:58:59 EDT" duration-ms="873" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateAddProduct2 -->
-        <test-method signature="validateAddProduct2(pojos.ProductPOJO)[pri:0, instance:gitApiTests.AddProductTest03@78691363]" started-at="2024-03-14T14:28:38 EDT" name="validateAddProduct2" data-provider="ProductTestDataFromPoiji" finished-at="2024-03-14T14:28:39 EDT" duration-ms="921" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ProductPOJO(titleStr=Skirt, title=SkirtCIq, price=33, description=Beautiful dress, image=https://i.pdravatar.cc, category=Dress, extraCellInExcelSheet=null)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateAddProduct2 -->
-        <test-method signature="validateAddProduct2(pojos.ProductPOJO)[pri:0, instance:gitApiTests.AddProductTest03@78691363]" started-at="2024-03-14T14:28:38 EDT" name="validateAddProduct2" data-provider="ProductTestDataFromPoiji" finished-at="2024-03-14T14:28:39 EDT" duration-ms="920" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ProductPOJO(titleStr=Phone, title=PhoneKpU, price=100, description=Samsung, image=https://i.pravddatar.cc, category=electronic, extraCellInExcelSheet=null)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateAddProduct2 -->
-        <test-method signature="validateAddProduct2(pojos.ProductPOJO)[pri:0, instance:gitApiTests.AddProductTest03@78691363]" started-at="2024-03-14T14:28:38 EDT" name="validateAddProduct2" data-provider="ProductTestDataFromPoiji" finished-at="2024-03-14T14:28:39 EDT" duration-ms="920" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ProductPOJO(titleStr=Lipstick, title=LipstickOgW, price=66, description=Red lip Stick, image=https://i.pravdatar.cc, category=Beauty, extraCellInExcelSheet=null)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateAddProduct2 -->
-      </class> <!-- gitApiTests.AddProductTest03 -->
+        </test-method> <!-- validateGetSingleCart -->
+      </class> <!-- gitApiTests.GetSingleCartTC11 -->
     </test> <!-- Test -->
-  </suite> <!-- ProductsSuite -->
+  </suite> <!-- CartSuite -->
 </testng-results>

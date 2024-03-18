@@ -16,8 +16,8 @@ public class GetProductDetailsTest02 extends BaseTest{
 	
 	@Test
 	void validateGetProductDetails() {
-		
 		System.out.println(Thread.currentThread().getId());
+		
 		
 		Response res=ReusableRequestMethods.getRequest("/1", reqSpe);
 		

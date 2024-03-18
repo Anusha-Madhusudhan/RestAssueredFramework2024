@@ -16,6 +16,8 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import reports.ExtentReportListeners;
 import utility.JsonUtility;
+import static org.hamcrest.MatcherAssert.*;
+import static org.hamcrest.Matchers.*;
 
 /**
  * 
@@ -28,10 +30,6 @@ public class BaseTest {
 	
 	@BeforeSuite
 	 void setUp() throws IOException {
-		
-		
-		
-		
 		
 		Map<String, String> apiMap=JsonUtility.getJsondataAsMap(FileConstatnt.apiFile);
 		String api=System.getProperty("api"); // mvn test -Dapi=gitAPI  passing value form command line
@@ -50,6 +48,8 @@ public class BaseTest {
 			break;
 		case "cart":
 			RestAssured.baseURI=apiMap.get("cart");
+			reqSpe=new RequestSpecBuilder().setBaseUri(RestAssured.baseURI)
+                    .addHeader("Content-Type", "application/json").build();
 			break;
 		case "user":
 			RestAssured.baseURI=apiMap.get("user");

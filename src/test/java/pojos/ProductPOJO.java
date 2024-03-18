@@ -9,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.poiji.annotation.ExcelCellName;
 import com.poiji.annotation.ExcelUnknownCells;
 
+import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
 
@@ -17,6 +18,7 @@ import lombok.ToString;
  */
 @ToString
 @Data
+@Builder
 public class ProductPOJO {
 	
 	@JsonIgnore

@@ -15,6 +15,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.QueryableRequestSpecification;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.SpecificationQuerier;
+import pojos.ProductPOJO;
 import reports.ExtentReportListeners;
 import reports.ExtentReportManager;
 
@@ -59,6 +60,25 @@ public class ReusableRequestMethods {
 		// Logging Request and response
 		ExtentReportManager.logIntoReport(reqSpec, endPoint, res,"GET");
 
+		return res;
+	}
+
+	public static Response putRequest(String endPoint, RequestSpecification reqSpec) {
+		
+		Response res=RestAssured.given().spec(reqSpec).put(endPoint);
+		
+		// Logging Request and response
+		ExtentReportManager.logIntoReport(reqSpec, endPoint, res,"PUT");
+		
+		return res;
+	}
+
+	public static Response deleteRequset(String endPoint, RequestSpecification reqSpe) {
+		
+		Response res=RestAssured.given().spec(reqSpe).delete(endPoint);
+		
+		// Logging Request and response
+		ExtentReportManager.logIntoReport(reqSpe, endPoint, res,"DELETE");
 		return res;
 	}
 
