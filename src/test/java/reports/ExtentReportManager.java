@@ -5,6 +5,7 @@ package reports;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Map;
 
 import org.testng.annotations.Test;
 
@@ -48,12 +49,21 @@ public class ExtentReportManager {
 		return reportName;
 	}
 	
-	public static void logIntoReport(RequestSpecification reqSpec,String endPoint,Response res,String httpMethod) {
+	public static void logIntoReport(RequestSpecification reqSpec,String endPoint,Response res,String httpMethod,Map<String, String> queryParams,Object payload) {
 	       QueryableRequestSpecification qReqSpe=SpecificationQuerier.query(reqSpec);
 	    	 
 	    	 
 	    	 ExtentReportListeners.extentTest.get().info("Base URI :: "+qReqSpe.getBaseUri());
 	    	 ExtentReportListeners.extentTest.get().info("End Point :: "+endPoint);
+	    	 if(queryParams!=null) {
+	    		 ExtentReportListeners.extentTest.get().info("Query Params :: "+queryParams.toString());
+	    	 }
+	    	 
+	    	 if(payload!=null) {
+	    		 ExtentReportListeners.extentTest.get().info("PayLoad :: "+payload.toString());
+	    	 }
+	    	 
+	    	 
 	    	 ExtentReportListeners.extentTest.get().info("Http method :: "+httpMethod);
 	    	 ExtentReportListeners.extentTest.get().info("Request Headers :: "+qReqSpe.getHeaders().asList().toString());
 	    	 

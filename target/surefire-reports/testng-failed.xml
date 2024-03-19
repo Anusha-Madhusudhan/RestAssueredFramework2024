@@ -6,12 +6,12 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="gitApiTests.GetSingleCartTC11">
+      <class name="gitApiTests.GetCartListInDateRangeTC14">
         <methods>
+          <include name="validateGetCartListInDateRange"/>
           <include name="setUp"/>
-          <include name="validateGetSingleCart"/>
         </methods>
-      </class> <!-- gitApiTests.GetSingleCartTC11 -->
+      </class> <!-- gitApiTests.GetCartListInDateRangeTC14 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [CartSuite] -->

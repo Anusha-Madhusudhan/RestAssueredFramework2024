@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-14T09:41:36 EDT" name="Default suite" finished-at="2024-03-14T09:41:37 EDT" duration-ms="617">
+  <suite started-at="2024-03-18T21:35:03 EDT" name="Default suite" finished-at="2024-03-18T21:35:03 EDT" duration-ms="745">
     <groups>
     </groups>
-    <test started-at="2024-03-14T09:41:36 EDT" name="Default test" finished-at="2024-03-14T09:41:37 EDT" duration-ms="617">
+    <test started-at="2024-03-18T21:35:03 EDT" name="Default test" finished-at="2024-03-18T21:35:03 EDT" duration-ms="745">
       <class name="poijiLibraryDemo.PoijiTest">
-        <test-method signature="poijiTest()[pri:0, instance:poijiLibraryDemo.PoijiTest@198b6731]" started-at="2024-03-14T09:41:36 EDT" name="poijiTest" finished-at="2024-03-14T09:41:37 EDT" duration-ms="567" status="PASS">
+        <test-method signature="poijiTest()[pri:0, instance:poijiLibraryDemo.PoijiTest@3c9754d8]" started-at="2024-03-18T21:35:03 EDT" name="poijiTest" finished-at="2024-03-18T21:35:03 EDT" duration-ms="700" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- poijiTest -->

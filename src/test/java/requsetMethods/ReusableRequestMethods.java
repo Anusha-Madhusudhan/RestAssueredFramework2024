@@ -29,7 +29,7 @@ public class ReusableRequestMethods {
 		Response res = RestAssured.given().spec(reqSpec).when().post();
 
 		// Logging Request and response
-		ExtentReportManager.logIntoReport(reqSpec, endPoint, res,"POST");
+		ExtentReportManager.logIntoReport(reqSpec, endPoint, res,"POST", null,mapPayload);
 
 		return res;
 	}
@@ -46,7 +46,7 @@ public class ReusableRequestMethods {
 
 		Response res = RestAssured.given().spec(reqSpec).post();
 		// Logging Request and response
-		ExtentReportManager.logIntoReport(reqSpec, endPoint, res,"POST");
+		ExtentReportManager.logIntoReport(reqSpec, endPoint, res,"POST", null,pojoPayload);
 		return res;
 	}
 
@@ -58,7 +58,7 @@ public class ReusableRequestMethods {
 		Response res = RestAssured.given().spec(reqSpec).get(endPoint);
 
 		// Logging Request and response
-		ExtentReportManager.logIntoReport(reqSpec, endPoint, res,"GET");
+		ExtentReportManager.logIntoReport(reqSpec, endPoint, res,"GET", null, null);
 
 		return res;
 	}
@@ -68,7 +68,7 @@ public class ReusableRequestMethods {
 		Response res=RestAssured.given().spec(reqSpec).put(endPoint);
 		
 		// Logging Request and response
-		ExtentReportManager.logIntoReport(reqSpec, endPoint, res,"PUT");
+		ExtentReportManager.logIntoReport(reqSpec, endPoint, res,"PUT", null,null);
 		
 		return res;
 	}
@@ -78,7 +78,15 @@ public class ReusableRequestMethods {
 		Response res=RestAssured.given().spec(reqSpe).delete(endPoint);
 		
 		// Logging Request and response
-		ExtentReportManager.logIntoReport(reqSpe, endPoint, res,"DELETE");
+		ExtentReportManager.logIntoReport(reqSpe, endPoint, res,"DELETE", null,null);
+		return res;
+	}
+
+	public static Response getRequest(String endPoint, RequestSpecification reqSpe, Map<String, String> queryParams) {
+		
+		Response res=RestAssured.given().spec(reqSpe).queryParams(queryParams).when().get(endPoint);
+		// Logging Request and response
+		ExtentReportManager.logIntoReport(reqSpe, endPoint, res,"GET",queryParams,null);
 		return res;
 	}
 

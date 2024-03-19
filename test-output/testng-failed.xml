@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="gitApiTests.AddProductTest03">
+      <class name="poijiLibraryDemo.PoijiTest">
         <methods>
-          <include name="setUp"/>
-          <include name="validateAddProduct"/>
+          <include name="poijiTest"/>
         </methods>
-      </class> <!-- gitApiTests.AddProductTest03 -->
+      </class> <!-- poijiLibraryDemo.PoijiTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
